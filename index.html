@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Click to copy ¯\_(ツ)_/¯</title>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+    function selectText(element) {
+        if (document.selection) {
+            var range = document.body.createTextRange();
+            range.moveToElementText(element);
+            range.select();
+        } else if (window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(element);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+        }
+	document.execCommand("copy")
+    }
+</script>
+
+</head>
+<body>
+<h1 onclick="selectText(this)">¯\_(ツ)_/¯</h1>
+</body>
+</html>

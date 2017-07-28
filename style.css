@@ -1,0 +1,15 @@
+body{
+  font-family:"Lucida Grande","Arial","Verdana","Helvetica","Comic Sans";
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  display:inline;
+  font-size:128px;
+  cursor:pointer;
+}
